@@ -50,7 +50,7 @@ const switchPlayer = function(){
 }
 
 
-    btnRoll.addEventListener("click", function(){
+btnRoll.addEventListener("click", function(){
         if(player){
             //1. get a random number
             const rolledNumber = Math.trunc(Math.random() * 6) + 1
@@ -78,7 +78,7 @@ btnHold.addEventListener("click", function(){
         scores[activePlayer] += currentScore
         document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer]
         
-        if (scores[activePlayer] >= 20){
+        if (scores[activePlayer] >= 100){
             
             player = false;
             diceEL.classList.add("hidden")
